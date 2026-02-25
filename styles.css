@@ -1,1 +1,34 @@
 /*  your css code here. If applicable */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 60px; /* Guideline height */
+    padding: 0 16px;
+}
+
+.image-button {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://via.placeholder.com/50x50/4A90E2/FFFFFF?text=🚀'); /* Replace with your image, e.g., mountain */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 12px; /* Rounded style */
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.image-button:hover {
+    opacity: 1.0; /* Guideline hover effect */
+}
+
+.button-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    user-select: none;
+}
