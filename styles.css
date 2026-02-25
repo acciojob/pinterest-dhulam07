@@ -1,34 +1,55 @@
-/*  your css code here. If applicable */
-.container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    height: 60px; /* Guideline height */
-    padding: 0 16px;
-}
-
-.image-button {
-    width: 50px;
-    height: 50px;
-    background-image: url('https://via.placeholder.com/50x50/4A90E2/FFFFFF?text=🚀'); /* Replace with your image, e.g., mountain */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 12px; /* Rounded style */
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.image-button:hover {
-    opacity: 1.0; /* Guideline hover effect */
-}
-
-.button-text {
+/* Reset default margin */
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    user-select: none;
+}
+
+/* Hero Container */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+/* Image Section */
+.hero-image {
+    width: 50%;
+    height: 400px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Content Section */
+.hero-content {
+    width: 40%;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Explore Button */
+.explore-btn {
+    padding: 12px 24px;
+    background-color: #e60023;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
 }
